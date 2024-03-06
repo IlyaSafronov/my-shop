@@ -1,0 +1,77 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  border: 1px solid #d58c51;
+}
+.root::before {
+  content: " ";
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  z-index: -1;
+  background-image: url("../../resource/images/backgroundProduct.png");
+}
+.root__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-inline: 15%;
+}
+.root__img {
+  margin-bottom: 31px;
+}
+.root__title {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  margin-bottom: 13px;
+  color: #ffffff;
+}
+.root__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  max-height: 68px;
+  color: #ffffff;
+}
+.root .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
+}
+.root .footer_pricetag {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.root .footer_pricetag__weight {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.root .footer__add_btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff;
+}
+.root .footer__add_btn:hover {
+  background: #d58c51;
+  border: 1px solid #d58c51;
+}

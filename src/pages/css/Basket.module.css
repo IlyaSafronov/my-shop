@@ -1,0 +1,47 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #161516;
+  height: 100vh;
+}
+.root .nr_wrapper {
+  padding-top: 54px;
+  width: 100%;
+}
+.root .footer {
+  border-top: 1px solid #d58c51;
+  width: 100%;
+  padding-inline: 20vw;
+}
+.root .footer .nr_wrapper {
+  padding-block: 20px 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.root .footer__text {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 26px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.root .footer__order_price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-left: 16px;
+  color: #d58c51;
+}
+.root .footer__send_order {
+  background: #d58c51;
+  padding: 12px 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #131313;
+}
