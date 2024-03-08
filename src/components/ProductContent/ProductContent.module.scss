@@ -64,16 +64,18 @@
     }
 
     &__add_btn {
-      width: fit-content;
-      height: fit-content;
-      padding: 12px 62px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #131313;
-      background-color: #d58c51;
-      border: 1px solid #d58c51;
-
+      display: inline-block;
+      cursor: pointer;
+      font: inherit;
+      font-weight: 700;
+      color:hsl(219, 76%, 25%) ;
+      text-decoration: none;
+      background: #fff;
+      padding: 1em 2.7em;
+      outline: 3px solid currentColor;
+      outline-offset: -6px;
+      border: 5px solid transparent;
+      transition: 500ms;
       &:hover,
       &:focus {
         border-color:hsl(219, 76%, 55%);

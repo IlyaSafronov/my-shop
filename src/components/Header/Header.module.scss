@@ -39,6 +39,10 @@
     font-weight: 700;
     line-height: 38px;
     text-transform: uppercase;
+    text-shadow:
+  2px 2px 0 hsl(358, 72%, 50%),
+  4px 4px 0 hsl(269, 75%, 40%) ,
+  6px 6px 0 hsl(219, 76%, 40%) ;
   }
 
   &_cart {
@@ -102,9 +106,9 @@
     color: hsl(219, 76%, 25%);
     text-decoration: none;
     background: #fff;
-    padding: 0.75em 2.5em;
+    padding: 1em 2.7em;
     outline: 3px solid currentColor;
-    outline-offset: -6px;
+    outline-offset: -8px;
     border: 5px solid transparent;
     transition: 500ms;
   }
