@@ -43,12 +43,29 @@
       color: #d58c51;
     }
     &__send_order {
-      background: #d58c51;
-      padding: 12px 40px;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 17px;
-      color: #131313;
+      display: inline-block;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    color: hsl(219, 76%, 25%);
+    text-decoration: none;
+    background: #fff;
+    padding: 0.75em 2.5em;
+    outline: 3px solid currentColor;
+    outline-offset: -6px;
+    border: 5px solid transparent;
+    transition: 500ms;
+    }
+
+    &__send_order:hover {
+      border-color:hsl(219, 76%, 55%);
+        color: #fff;
+        outline-offset: 0px;
+        background: hsl(219, 76%, 40%);
+        box-shadow: 
+          inset 0 0 0 5px hsl(219, 76%, 40%),
+          inset 0 0 0 10px hsl(219, 76%, 25%);
+
     }
   }
 }

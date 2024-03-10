@@ -11,12 +11,28 @@
 
   &__form_type_switcher {
     align-self: flex-end;
-    text-decoration: underline;
-    font-weight: 300;
-    font-size: 11px;
-    line-height: 13px;
-    color: #d58c51;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    margin-bottom: 13px;
+    text-align: start;
+    text-decoration: none;
+    background-image: linear-gradient(90deg, red, blue 50%, currentColor 50%);
+    background-size: 200% 4px;
+    background-repeat: no-repeat;
+    background-position: right 1.5em;
+    padding-block: .25em;
+
+    transition: 
+    color 500ms,
+    background-position 500ms;
+
     cursor: pointer;
+  }
+  &__form_type_switcher:hover,
+  &__form_type_switcher:focus {
+    color: #0b9422;
+    background-position: left 1.5em;
   }
 
   &__title {
@@ -125,12 +141,27 @@
   }
 
   &__submit_btn {
-    background: #d58c51;
-    padding: 12px 77px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #131313;
+    display: inline-block;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    color: hsl(219, 76%, 25%);
+    text-decoration: none;
+    background: #fff;
+    padding: 0.75em 2.5em;
+    outline: 3px solid currentColor;
+    outline-offset: -6px;
+    border: 5px solid transparent;
+    transition: 500ms;
+  }
+  &__submit_btn:hover {
+    border-color:hsl(219, 76%, 55%);
+        color: #fff;
+        outline-offset: 0px;
+        background: hsl(219, 76%, 40%);
+        box-shadow: 
+          inset 0 0 0 5px hsl(219, 76%, 40%),
+          inset 0 0 0 10px hsl(219, 76%, 25%);
   }
   &:hover {
     background: #ffffff;
